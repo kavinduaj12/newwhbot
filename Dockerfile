@@ -1,6 +1,6 @@
 FROM fusuf/whatsasena:latest
 
-RUN git clone https://github.com/agentnox/newwhbot /root/newwhbot
+RUN git clone -b main https://github.com/agentnox/newwhbot /root/newwhbot
 WORKDIR /root/newwhbot/
 ENV TZ=Asia/Kolkata
 RUN npm install supervisor -g
